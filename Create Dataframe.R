@@ -15,10 +15,6 @@ g <- cbind(d,e) # combine objects as columns
 h <- rbind(d, e ) # combine objects as rows 
 
 
-
-
-
-
 # Accessing & Changing Data Elements in Dataframe -------------------------------------------------
 
 mydata[1,1:3] # columns 1 dataframe
@@ -33,7 +29,6 @@ newobject <- edit(mydata) # edit copy and save a
 fix(mydata) # edit in place 
 
 
-
 # Creating a List ---------------------------------------------------------
 w <- list(name="Fred",mydata, age=5.3)      
 
@@ -44,13 +39,9 @@ rm(h) # delete h
 
 
 
-
-
 # Enter data using editor -------------------------------------------------
 mydata <- data.frame(age=numeric(0), gender=character(0), weight=numeric(0))
 mydata <- edit(mydata)
-
-
 
 
 # Saving and Loading Data -------------------------------------------------
@@ -58,14 +49,3 @@ mydata <- edit(mydata)
 write.csv(mydata,"mydata.csv")
 
 mydata_new <- read.csv("mydata.csv")
-
-
-
-
-
-
-
-
-
-
-
